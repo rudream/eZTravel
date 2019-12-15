@@ -276,6 +276,7 @@ nav ul{
     justify-content: center;
     width: 90%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .form-window{
@@ -296,13 +297,11 @@ nav ul{
 }
 
 .form-content{
-    max-width: 50%;
+    width: 50%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem;
-    padding-top: 3rem;
     text-align: center;
 }
 
@@ -315,21 +314,36 @@ nav ul{
     border-bottom-right-radius: 1.5rem;
 }
 
-#contact textarea{
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    transform: translatex(-50%);
+.message-form{
+    outline: none;
     resize: none;
-    width: 70%;
-    margin: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#message-label{
+.form-label{
+    display: flex;
+    padding: 2rem;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+textarea{
     position: absolute;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
+    resize: none;
+    display: flex;
+    width: 70%;
+    height: 25%;
+    font-size: 2rem;
 }
+
 
 
 
@@ -391,4 +405,33 @@ nav ul{
         background-position-x: 70%;
         background-position-y: 20rem;
     }
+
+    .form-window{
+        width: 90%;
+        height: 70vh;
+        max-height: 60rem;
+    }
+
+    .form-head{
+        margin-bottom: 5%;
+    }
+
+    .form-label{
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
+    #message-label{
+        padding-top: 2rem;
+    }
+    #contact input, #contact textarea{
+        font-size: 1.5rem;
+    }
+
+    textarea{
+        width: 70%;
+        height: 30%;
+        max-height: 15vh;
+    }
+
 }
