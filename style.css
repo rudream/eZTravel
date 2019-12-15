@@ -270,6 +270,7 @@ nav ul{
 }
 
 #contact {
+    position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -344,7 +345,13 @@ textarea{
     font-size: 2rem;
 }
 
-
+#back-to-top{
+    color:white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+}
 
 
 /* MOBILE & TABLET RESPONSIVENESS */
