@@ -58,7 +58,7 @@ button{
 }
 
 button:hover{
-    background: rgb(216, 118, 77);
+    background: rgb(168, 93, 60);
 }
 
 
@@ -140,6 +140,7 @@ nav ul{
 .location-head h2, .location-head h3{
     background: linear-gradient(#131C27,#663B34);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
