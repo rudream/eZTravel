@@ -71,7 +71,7 @@ button:hover{
 }
 
 nav{
-    min-height: 10vh;
+    min-height: 5vh;
     width: 90%;
     display: flex;
     margin: auto;
@@ -101,7 +101,7 @@ nav ul{
 
 #hero{
     background: linear-gradient(rgba(0, 0, 0, 0.65),transparent),url('./media/img/path.jpg');
-    min-height: 90vh;
+    min-height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
