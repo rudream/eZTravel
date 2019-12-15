@@ -1,4 +1,4 @@
-/* Global Styles */
+/* GLOBAL */
 
 *{
     margin: 0;
@@ -36,7 +36,7 @@ h5{
 }
 
 a{
-    color: #4F5D75;
+    color: #E7E7E7;
     text-decoration: none;
 }
 
@@ -46,19 +46,28 @@ body{
 
 button{
     border: none;
-    background-color: #EF8354;
+    background: #EF8354;
     padding: 2rem 6rem;
     margin-top: 2rem;
     font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     color: white;
     font-weight: 600;
+    transition: background 0.5s ease-in-out;
 }
-/* Nav & HERO */
+
+button:hover{
+    background: rgb(216, 118, 77);
+}
+
+
+
+/* NAVBAR */
 
 .head{
-    background: rgb(246, 247, 247);
-    color: #4F5D75;
+    background: #EF8354;
+    color: #E7E7E7;
 }
 
 nav{
@@ -87,27 +96,8 @@ nav ul{
     color: #2D3142;
 }
 
-@media screen and (max-width: 1080px){
-    #logo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-    }
-    h2{
-        font-size: 3rem;
-    }
-    h3{
-        font-size: 2rem;
-    }
-    
-    #navbar{
-        min-height: 10vh;
-        position: sticky;
-    }
-}
+/* HERO */
+
 
 .hero{
     background: linear-gradient(rgba(0, 0, 0, 0.65),transparent),url('./media/img/path.jpg');
@@ -123,3 +113,282 @@ nav ul{
     text-align: center;
 }
 
+
+
+/* LOCATION */
+
+#location{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),transparent), url('./media/img/new-york.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-head{
+    width: 90%;
+    margin: auto;
+}
+
+.location-head h2{
+    text-decoration: underline;
+}
+
+.location-head h2, .location-head h3{
+    background: linear-gradient(#131C27,#663B34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.location-head h3{
+    font-weight: 600;
+}
+
+
+
+/* CLOUD */
+
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.moving-cloud-1{
+    animation: cloudAnimation-1 3s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2{
+    top: 15%;
+    z-index: -2;
+    opacity: 0.5;
+    animation: cloudAnimation-2 3s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes cloudAnimation-1{
+    from{
+        transform: translatex(5%);
+    }
+    to {
+        transform: translatex(0%);
+    }
+}
+
+@keyframes cloudAnimation-2{
+    from{
+        transform: translate(6%,-5%);
+    }
+    to{
+        transform: translate(0%, 0%);
+    }
+}
+
+
+
+/* SERVICES */
+
+.services-head{
+    background: #2D3142;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(231, 231, 231);
+}
+
+.services{
+    min-height: 100vh;
+}
+
+.cards img{
+    max-width: 30%;
+    margin: 2rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 1 25rem;
+    margin: 2rem 5rem;
+    min-height: 60vh;
+    justify-content: center;
+    border-radius: 3rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    background: rgb(231, 231, 231);
+}
+
+.card-head{
+    background: #EF8354;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.card h4, .card p{
+    padding: 2rem;
+    padding-top: 3rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.card h4{
+    padding-top: 10rem;
+}
+
+.card p{
+    padding-top: 2.5rem;
+    font-size: 2.4rem;
+}
+
+
+
+/* CONTACT FORM */
+
+.mountain-background{
+    background: url('./media/img/mountain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20%;
+}
+
+#contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.form-window{
+    background: rgba(0, 0, 0, 0.541);
+    width: 30vw;
+    height: 50vh;
+    color: #E7E7E7;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.form-head{
+    text-align: center;
+    padding: 1.7rem;
+    background: #EF8354;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.form-content{
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+
+#contact button{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+#contact textarea{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translatex(-50%);
+    resize: none;
+    width: 70%;
+    margin: auto;
+}
+
+#message-label{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+
+/* MOBILE & TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 1080px){
+    #logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+
+    button{
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+    }
+    
+    #navbar{
+        min-height: 10vh;
+        position: sticky;
+    }
+
+    #location{
+        background-position-x: 52%;
+    }
+
+    .cloud{
+        height: 40rem;
+        top: -3%;
+    }
+
+    .card{
+        min-height: 40vh;
+    }
+
+    .card h4, .card p{
+        padding: 2rem;
+        padding-top: 3rem;
+        max-width: 90%;
+        margin: auto;
+        font-size: 3rem;
+    }
+    .card p{
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .mountain-background{
+        background-position-x: 70%;
+        background-position-y: 20rem;
+    }
+}
