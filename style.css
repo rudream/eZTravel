@@ -71,7 +71,7 @@ button:hover{
 }
 
 nav{
-    min-height: 5vh;
+    min-height: 8vh;
     width: 90%;
     display: flex;
     margin: auto;
@@ -101,7 +101,7 @@ nav ul{
 
 #hero{
     background: linear-gradient(rgba(0, 0, 0, 0.65),transparent),url('./media/img/path.jpg');
-    min-height: 95vh;
+    min-height: 92vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -272,7 +272,7 @@ nav ul{
 
 #contact {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +284,7 @@ nav ul{
 .form-window{
     background: rgba(0, 0, 0, 0.541);
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     color: #E7E7E7;
     border-radius: 1.5rem;
     position: relative;
@@ -342,7 +342,7 @@ textarea{
     resize: none;
     display: flex;
     width: 70%;
-    height: 25%;
+    height: 30%;
     font-size: 2rem;
 }
 
@@ -354,6 +354,36 @@ textarea{
     bottom: 0%;
 }
 
+/* FOOTER */
+
+footer{
+    background: #EF8354;
+    height: 10vh;
+}
+
+li{
+    list-style-type: none;
+}
+
+.footer-wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(10%);
+}
+
+.footer-wrapper img{
+    height: 8vh;
+}
+
+.footer-wrapper h5{
+    padding: 1%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    background: rgba(0, 0, 0, 0.1);
+}
 
 
 
