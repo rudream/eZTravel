@@ -327,7 +327,7 @@ nav ul{
 
 .form-label{
     display: flex;
-    padding: 2rem;
+    padding: 0.5rem;
     width: 50%;
     margin: auto;
     align-items: center;
@@ -353,6 +353,8 @@ textarea{
     transform: translateX(-50%);
     bottom: 0%;
 }
+
+
 
 
 /* MOBILE & TABLET RESPONSIVENESS */
