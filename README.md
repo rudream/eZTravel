@@ -1,6 +1,6 @@
 # eZTravel
 
-Travel agency site built using HTML5 and CSS3 using FlexBox.
+Travel agency site built from scratch using HTML5 and CSS3 using FlexBox.
 
 Features:
 - Mobile Responsiveness
