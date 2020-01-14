@@ -333,8 +333,8 @@ textarea {
   transform: translateX(-50%);
   resize: none;
   display: flex;
-  width: 70%;
-  height: 30%;
+  width: 20vw;
+  height: 15vh;
   font-size: 2rem;
 }
 
